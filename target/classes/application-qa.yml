@@ -1,0 +1,23 @@
+db-config:
+  domain: atenea.cfkwry6gcjvj.us-east-1.rds.amazonaws.com
+  name: atenea_eportafolio
+  user: atenea_usr
+  password: 4Zn!UDBrgKt8J#sT
+
+ms-document:
+  port: 8012
+  path: /api/v1/document-manager
+  complete-path: http://document:${ms-document.port}
+
+ms-notification:
+  port: 8020
+  complete-path: http://notification:${ms-notification.port}
+  notification:
+    path: /api/v1/notification
+  template:
+    path: /api/v1/template
+
+ms-settings:
+  port: 8010
+  path: /api/v1/settings
+  complete-path: http://settings:${ms-settings.port}

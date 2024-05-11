@@ -1,0 +1,23 @@
+ms-document:
+  port: 8012
+  path: /api/v1/document-manager
+  complete-path: http://document:${ms-document.port}
+
+ms-notification:
+  port: 8020
+  complete-path: http://notification:${ms-notification.port}
+  notification:
+    path: /api/v1/notification
+  template:
+    path: /api/v1/template
+
+ms-settings:
+  port: 8010
+  path: /api/v1/settings
+  complete-path: http://settings:${ms-settings.port}
+
+db-config:
+  domain: db-eportafolio:5432
+  name: atenea_eportafolio
+  user: postgres
+  password: VA@Atenea2023
